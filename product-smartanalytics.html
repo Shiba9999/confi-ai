@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfiAI Smart Analytics - Advanced Business Intelligence</title>
+    <meta name="description" content="Transform your raw data into actionable insights with ConfiAI Smart Analytics. Featuring predictive modeling, real-time dashboards, and automated reporting.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-brain text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-900">ConfiAI</h1>
+                            <p class="text-xs text-gray-500">by Confitech Solutions</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="index.html#products" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Products</a>
+                        <a href="index.html#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-500 to-cyan-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span class="text-sm font-medium">Analytics Platform</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">ConfiAI Smart Analytics</h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Transform your raw data into actionable insights with our advanced business intelligence platform powered by machine learning algorithms.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                            <i class="fas fa-play mr-2"></i>
+                            Request Demo
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Brochure
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <canvas id="demoChart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover the comprehensive capabilities that make Smart Analytics the perfect choice for data-driven businesses
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Predictive Analytics</h3>
+                    <p class="text-gray-600">
+                        Leverage machine learning algorithms to forecast trends, predict outcomes, and make proactive business decisions.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Real-time Dashboards</h3>
+                    <p class="text-gray-600">
+                        Monitor your business metrics in real-time with customizable, interactive dashboards that update automatically.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Automated Reporting</h3>
+                    <p class="text-gray-600">
+                        Generate comprehensive reports automatically and schedule them for delivery to stakeholders.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-pie text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data Visualization</h3>
+                    <p class="text-gray-600">
+                        Create stunning visual representations of your data with our advanced charting and visualization tools.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Data Security</h3>
+                    <p class="text-gray-600">
+                        Enterprise-grade security with encryption, access controls, and compliance with industry standards.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">API Integration</h3>
+                    <p class="text-gray-600">
+                        Seamlessly integrate with your existing systems through our comprehensive REST API and connectors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technical Specifications</h2>
+                <p class="text-xl text-gray-600">Built with cutting-edge technology for enterprise-scale performance</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Platform Capabilities</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Processing Power</h4>
+                                <p class="text-gray-600">Process millions of data points in real-time with distributed computing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Data Sources</h4>
+                                <p class="text-gray-600">Connect to 100+ data sources including databases, APIs, and cloud services</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Scalability</h4>
+                                <p class="text-gray-600">Auto-scaling architecture that grows with your business needs</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Machine Learning</h4>
+                                <p class="text-gray-600">Built-in ML algorithms for predictive analytics and anomaly detection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Performance Metrics</h3>
+                    <div class="bg-white rounded-xl p-6 shadow-sm">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">99.9%</div>
+                                <div class="text-gray-600">Uptime SLA</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">&lt;100ms</div>
+                                <div class="text-gray-600">Query Response</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">10TB+</div>
+                                <div class="text-gray-600">Data Processing</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                                <div class="text-gray-600">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pricing Plans</h2>
+                <p class="text-xl text-gray-600">Choose the plan that fits your business needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Starter Plan -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Starter</h3>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-gray-900">$99</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Up to 1GB data processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">5 custom dashboards</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Basic reporting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Email support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+                
+                <!-- Professional Plan -->
+                <div class="bg-blue-600 text-white rounded-xl p-8 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                        Most Popular
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Professional</h3>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold">$299</span>
+                        <span class="text-blue-200">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Up to 10GB data processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Unlimited dashboards</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-400 mr-3"></i>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Get Started
+                    </button>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Enterprise</h3>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-gray-900">Custom</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Unlimited data processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Custom integrations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">Dedicated support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span class="text-gray-600">SLA guarantee</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-500 to-cyan-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Data?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join thousands of businesses that trust ConfiAI Smart Analytics for their data intelligence needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Start Free Trial
+                </button>
+                <a href="index.html#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i>
+                    Schedule Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-brain text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">ConfiAI</h3>
+                        <p class="text-sm text-gray-400">by Confitech Solutions</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-4">
+                    © 2024 ConfiAI - Confitech Solutions Private Limited. All rights reserved.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="index.html#products" class="text-gray-400 hover:text-white transition-colors">Products</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Demo Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('demoChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Revenue Growth',
+                        data: [30, 45, 60, 55, 70, 85],
+                        borderColor: 'rgba(255, 255, 255, 0.8)',
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointBackgroundColor: 'white',
+                        pointBorderColor: 'rgba(255, 255, 255, 0.8)',
+                        pointBorderWidth: 2,
+                        pointRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: {
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
