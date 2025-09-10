@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Confi-Sales',
             shortDesc: 'AI-driven insights to accelerate business growth.',
             description: 'Leverage advanced forecasting algorithms to predict trends, optimize inventory, forecast demand, and make data-driven business decisions with confidence.',
-            icon: 'fas fa-crystal-ball',
+            icon: 'fas fa-chart-line',
             features: [' OCR-Powered ID Scanning ', 'Facial Biometrics Verification', ' Fraud & Forgery Detection', 'Multi-ID Support',' Global Compliance','API-First Design'],
             price: 'Enterprise',
             category: 'Predictive Analytics',
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${product.features.slice(0, 2).map(feature => `
                                 <span class="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-full">${feature}</span>
                             `).join('')}
-                            ${product.features.length > 2 ? `<span class="text-xs bg-gray-50 text-gray-500 px-2 py-1 rounded-full">+${product.features.length - 2} more</span>` : ''}
+                            ${product.features.length > 2 ? `<button type="button" aria-label="Show more features" class="feature-more text-xs bg-gray-50 text-gray-600 px-2 py-1 rounded-full hover:bg-gray-100 border border-gray-200" data-remaining="${product.features.slice(2).join('|')}" data-title="${product.name} Features">+${product.features.length - 2} more</button>` : ''}
                         </div>
                     </div>
                     
@@ -260,8 +260,94 @@ document.addEventListener('DOMContentLoaded', function () {
                 opacity: 1;
                 transform: translateY(0);
             }
+
+            /* Modal base styles */
+            .modal-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.45);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1000;
+                padding: 1rem;
+            }
+            .modal-card {
+                background: #ffffff;
+                border-radius: 0.75rem;
+                width: 100%;
+                max-width: 28rem;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+                overflow: hidden;
+            }
+            .modal-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1.25rem;
+                border-bottom: 1px solid #eef2f7;
+            }
+            .modal-title { font-weight: 700; color: #111827; }
+            .modal-close {
+                background: transparent;
+                border: 0;
+                color: #6b7280;
+                font-size: 1.125rem;
+                cursor: pointer;
+            }
+            .modal-body { padding: 1rem 1.25rem 1.25rem; }
+            .feature-chip {
+                display: inline-block;
+                margin: 0 0.5rem 0.5rem 0;
+                padding: 0.375rem 0.625rem;
+                font-size: 0.75rem;
+                background: #eff6ff;
+                color: #2563eb;
+                border-radius: 9999px;
+                border: 1px solid #dbeafe;
+            }
         `;
         document.head.appendChild(style);
+    }
+
+    // Modal helpers
+    function openFeaturesModal(title, featuresString) {
+        const features = featuresString.split('|').map(f => f.trim()).filter(Boolean);
+
+        const overlay = document.createElement('div');
+        overlay.className = 'modal-overlay';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+
+        overlay.innerHTML = `
+            <div class="modal-card">
+                <div class="modal-header">
+                    <div class="modal-title">${title}</div>
+                    <button class="modal-close" aria-label="Close">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex flex-wrap">
+                        ${features.map(f => `<span class=\"feature-chip\">${f}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const remove = () => document.body.removeChild(overlay);
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) remove(); });
+        overlay.querySelector('.modal-close').addEventListener('click', remove);
+
+        document.body.appendChild(overlay);
+    }
+
+    function initFeatureMoreHandlers() {
+        document.body.addEventListener('click', function (e) {
+            const btn = e.target.closest('.feature-more');
+            if (!btn) return;
+            const features = btn.getAttribute('data-remaining') || '';
+            const title = btn.getAttribute('data-title') || 'More Features';
+            openFeaturesModal(title, features);
+        });
     }
 
     // Initialize all functions
@@ -271,6 +357,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initScrollEffects();
     initContactForm();
     addAnimationStyles();
+    initFeatureMoreHandlers();
 
     // Initialize scroll animations after a short delay
     setTimeout(initScrollAnimations, 500);
