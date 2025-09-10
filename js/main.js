@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const products = [
         {
             id: 'smartanalytics',
-            name: 'ConfiAI Smart Analytics',
-            shortDesc: 'Advanced business intelligence powered by machine learning algorithms',
+            name: 'Confi-AutoDocs',
+            shortDesc: 'AI ingestion for invoices and forms.',
             description: 'Transform your raw data into actionable insights with our Smart Analytics platform. Featuring predictive modeling, real-time dashboards, and automated reporting capabilities.',
             icon: 'fas fa-chart-line',
             features: ['Predictive Analytics', 'Real-time Dashboards', 'Automated Reporting', 'Data Visualization'],
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'aiassistant',
-            name: 'ConfiAI Virtual Assistant',
-            shortDesc: 'Intelligent conversational AI for customer service and support',
+            name: 'Confi-HealthHub',
+            shortDesc: 'Your vital signs, simplified by AI.',
             description: 'Deploy sophisticated AI assistants that understand context, handle complex queries, and provide personalized customer experiences across multiple channels.',
             icon: 'fas fa-robot',
             features: ['Natural Language Processing', '24/7 Availability', 'Multi-channel Support', 'Custom Training'],
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'visionai',
-            name: 'ConfiAI Vision AI',
-            shortDesc: 'Computer vision solutions for image and video analysis',
+            name: 'Confi-Assist',
+            shortDesc: 'Conversational AI for business support.',
             description: 'Harness the power of computer vision to analyze images and videos, detect objects, recognize faces, and extract meaningful information from visual content.',
             icon: 'fas fa-eye',
             features: ['Object Detection', 'Facial Recognition', 'Image Classification', 'Video Analytics'],
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'nlpengine',
-            name: 'ConfiAI NLP Engine',
-            shortDesc: 'Natural language processing for text analysis and understanding',
+            name: 'Confi-Slot',
+            shortDesc: 'Get your slot instantly with AI booking.',
             description: 'Advanced NLP capabilities including sentiment analysis, entity recognition, language translation, and content generation for diverse business applications.',
             icon: 'fas fa-language',
             features: ['Sentiment Analysis', 'Entity Recognition', 'Language Translation', 'Text Generation'],
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'automl',
-            name: 'ConfiAI AutoML Platform',
-            shortDesc: 'Automated machine learning for rapid model development',
+            name: 'Confi KYC',
+            shortDesc: 'Seamless KYC with AI-powered ID verification and face match.',
             description: 'Build, train, and deploy machine learning models without extensive coding. Our AutoML platform democratizes AI development for businesses of all sizes.',
             icon: 'fas fa-cogs',
             features: ['No-code ML', 'Automated Training', 'Model Deployment', 'Performance Monitoring'],
@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'predictive',
-            name: 'ConfiAI Predictive Engine',
-            shortDesc: 'Forecasting and prediction models for business optimization',
+            name: 'Confi-Sales',
+            shortDesc: 'AI-driven insights to accelerate business growth.',
             description: 'Leverage advanced forecasting algorithms to predict trends, optimize inventory, forecast demand, and make data-driven business decisions with confidence.',
             icon: 'fas fa-crystal-ball',
             features: ['Demand Forecasting', 'Trend Analysis', 'Risk Assessment', 'Optimization Models'],
