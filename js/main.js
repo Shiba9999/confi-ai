@@ -1,6 +1,6 @@
 // ConfiAI Website JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     // AI Products Data
     const products = [
         {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             shortDesc: 'AI ingestion for invoices and forms.',
             description: 'Transform your raw data into actionable insights with our Smart Analytics platform. Featuring predictive modeling, real-time dashboards, and automated reporting capabilities.',
             icon: 'fas fa-chart-line',
-            features: ['Predictive Analytics', 'Real-time Dashboards', 'Automated Reporting', 'Data Visualization'],
+            features: [' AI-Driven Document Extraction', ' Automated Validation Engine', ' Seamless Data Storage Integration', 'Multi-Format Support', 'Error Detection & Alerts', 'Scalable Cloud Infrastructure'],
             price: 'Enterprise',
             category: 'Analytics',
             color: 'from-blue-500 to-cyan-500'
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             shortDesc: 'Your vital signs, simplified by AI.',
             description: 'Deploy sophisticated AI assistants that understand context, handle complex queries, and provide personalized customer experiences across multiple channels.',
             icon: 'fas fa-robot',
-            features: ['Natural Language Processing', '24/7 Availability', 'Multi-channel Support', 'Custom Training'],
+            features: ['Camera-Based Vital Detection', ' Digital Health Records Hub', 'AI-Enhanced Accuracy', 'Trend Tracking & History',' Privacy & Security First','Multi-Platform Accessibility'],
             price: 'Custom',
             category: 'Conversational AI',
             color: 'from-purple-500 to-pink-500'
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             shortDesc: 'Conversational AI for business support.',
             description: 'Harness the power of computer vision to analyze images and videos, detect objects, recognize faces, and extract meaningful information from visual content.',
             icon: 'fas fa-eye',
-            features: ['Object Detection', 'Facial Recognition', 'Image Classification', 'Video Analytics'],
+            features: [' Private Data Training', ' 24/7 Intelligent Assistance', ' Multi-Channel Support', ' Seamless Integrations',' Natural Conversations',' Analytics & Insights'],
             price: 'Premium',
             category: 'Computer Vision',
             color: 'from-green-500 to-teal-500'
@@ -42,29 +42,29 @@ document.addEventListener('DOMContentLoaded', function() {
             shortDesc: 'Get your slot instantly with AI booking.',
             description: 'Advanced NLP capabilities including sentiment analysis, entity recognition, language translation, and content generation for diverse business applications.',
             icon: 'fas fa-language',
-            features: ['Sentiment Analysis', 'Entity Recognition', 'Language Translation', 'Text Generation'],
+            features: [' AI-Powered Appointment Scheduling', ' Cause & Category Detection', ' Calendar & System Integration ', ' Multi-Language Support','Queue Optimization','Smart Reminders & Notifications'],
             price: 'Standard',
             category: 'Natural Language',
             color: 'from-orange-500 to-red-500'
         },
         {
-            id: 'automl',
+            id: 'kycai',
             name: 'Confi KYC',
             shortDesc: 'Seamless KYC with AI-powered ID verification and face match.',
             description: 'Build, train, and deploy machine learning models without extensive coding. Our AutoML platform democratizes AI development for businesses of all sizes.',
             icon: 'fas fa-cogs',
-            features: ['No-code ML', 'Automated Training', 'Model Deployment', 'Performance Monitoring'],
+            features: [' Advanced Predictive Analytics', ' Real-Time Dashboards', 'Top-Selling Products Insights', ' Regional & Demographic Analysis',' Automated Sales Reporting',' Data Security & Compliance'],
             price: 'Professional',
             category: 'Machine Learning',
             color: 'from-indigo-500 to-purple-500'
         },
         {
-            id: 'predictive',
+            id: 'saleai',
             name: 'Confi-Sales',
             shortDesc: 'AI-driven insights to accelerate business growth.',
             description: 'Leverage advanced forecasting algorithms to predict trends, optimize inventory, forecast demand, and make data-driven business decisions with confidence.',
             icon: 'fas fa-crystal-ball',
-            features: ['Demand Forecasting', 'Trend Analysis', 'Risk Assessment', 'Optimization Models'],
+            features: [' OCR-Powered ID Scanning ', 'Facial Biometrics Verification', ' Fraud & Forgery Detection', 'Multi-ID Support',' Global Compliance','API-First Design'],
             price: 'Enterprise',
             category: 'Predictive Analytics',
             color: 'from-yellow-500 to-orange-500'
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="mb-4">
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="text-xl font-bold text-gray-900">${product.name}</h3>
-                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">${product.category}</span>
+                         
                         </div>
                         <p class="text-gray-600 mb-4">${product.shortDesc}</p>
                     </div>
@@ -127,9 +127,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function initMobileMenu() {
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', function() {
+            mobileMenuButton.addEventListener('click', function () {
                 mobileMenu.classList.toggle('hidden');
                 const icon = mobileMenuButton.querySelector('i');
                 icon.classList.toggle('fa-bars');
@@ -142,18 +142,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function initSmoothScrolling() {
         const navLinks = document.querySelectorAll('a[href^="#"]');
         navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
+
                 if (targetSection) {
                     const offsetTop = targetSection.offsetTop - 80; // Account for fixed header
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
                     const mobileMenu = document.getElementById('mobile-menu');
                     if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
@@ -171,8 +171,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navbar Background on Scroll
     function initScrollEffects() {
         const navbar = document.querySelector('nav');
-        
-        window.addEventListener('scroll', function() {
+
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 navbar.classList.add('bg-white/98');
                 navbar.classList.remove('bg-white/95');
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate-fade-in');
@@ -209,21 +209,21 @@ document.addEventListener('DOMContentLoaded', function() {
     function initContactForm() {
         const contactForm = document.querySelector('#contact form');
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                
+
                 // Get form data
                 const formData = new FormData(this);
                 const name = this.querySelector('input[placeholder="Your Name"]').value;
                 const email = this.querySelector('input[placeholder="your@email.com"]').value;
                 const message = this.querySelector('textarea').value;
-                
+
                 // Simple validation
                 if (!name || !email || !message) {
                     alert('Please fill in all fields');
                     return;
                 }
-                
+
                 // Show success message (in a real app, you'd send this to a server)
                 alert('Thank you for your message! We\'ll get back to you soon.');
                 this.reset();
@@ -271,14 +271,14 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollEffects();
     initContactForm();
     addAnimationStyles();
-    
+
     // Initialize scroll animations after a short delay
     setTimeout(initScrollAnimations, 500);
 
     // Export products data for individual pages
     window.ConfiAI = {
         products: products,
-        getProduct: function(id) {
+        getProduct: function (id) {
             return products.find(product => product.id === id);
         }
     };
@@ -287,18 +287,17 @@ document.addEventListener('DOMContentLoaded', function() {
 // Utility Functions
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
-    notification.className = `fixed top-20 right-4 z-50 px-6 py-3 rounded-lg text-white font-medium transform translate-x-full transition-transform duration-300 ${
-        type === 'success' ? 'bg-green-500' : 'bg-red-500'
-    }`;
+    notification.className = `fixed top-20 right-4 z-50 px-6 py-3 rounded-lg text-white font-medium transform translate-x-full transition-transform duration-300 ${type === 'success' ? 'bg-green-500' : 'bg-red-500'
+        }`;
     notification.textContent = message;
-    
+
     document.body.appendChild(notification);
-    
+
     // Slide in
     setTimeout(() => {
         notification.classList.remove('translate-x-full');
     }, 100);
-    
+
     // Slide out and remove
     setTimeout(() => {
         notification.classList.add('translate-x-full');
