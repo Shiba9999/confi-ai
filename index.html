@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConfiAI - AI Solutions by Confitech Solutions Private Limited</title>
-    <meta name="description" content="ConfiAI showcases cutting-edge AI products and solutions from Confitech Solutions Private Limited. Explore our innovative AI technologies designed for modern businesses.">
-    
+    <meta name="description"
+        content="ConfiAI showcases cutting-edge AI products and solutions from Confitech Solutions Private Limited. Explore our innovative AI technologies designed for modern businesses.">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    
+
     <!-- Custom Tailwind Config -->
     <script>
         tailwind.config = {
@@ -32,35 +35,36 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        
+
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-        
+
         .card-hover {
             transition: all 0.3s ease;
         }
-        
+
         .card-hover:hover {
             transform: translateY(-8px);
         }
-        
+
         .ai-glow {
             box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);
         }
-        
+
         .scroll-smooth {
             scroll-behavior: smooth;
         }
     </style>
 </head>
+
 <body class="bg-white text-gray-900 scroll-smooth">
-    
+
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,7 +72,8 @@
                 <!-- Logo -->
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-brain text-white text-lg"></i>
                         </div>
                         <div>
@@ -77,33 +82,41 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
-                        <a href="#products" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Products</a>
-                        <a href="#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
-                        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">Contact</a>
+                        <a href="#home"
+                            class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#products"
+                            class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Products</a>
+                        <a href="#about"
+                            class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#contact"
+                            class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">Contact</a>
                     </div>
                 </div>
-                
+
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button type="button" id="mobile-menu-button" class="text-gray-900 hover:text-blue-600 focus:outline-none">
+                    <button type="button" id="mobile-menu-button"
+                        class="text-gray-900 hover:text-blue-600 focus:outline-none">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        
+
         <!-- Mobile Navigation -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
                 <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Home</a>
-                <a href="#products" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Products</a>
-                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">About</a>
-                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Contact</a>
+                <a href="#products"
+                    class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Products</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">About</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Contact</a>
             </div>
         </div>
     </nav>
@@ -118,23 +131,26 @@
                         <span class="text-white text-sm font-medium">Introducing ConfiAI</span>
                     </div>
                     <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                        Next-Generation 
-                        <span class="block md:inline bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                          AI Solutions
+                        Next-Generation
+                        <span
+                            class="block md:inline bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                            AI Solutions
                         </span>
-                      </h1>
-                      
+                    </h1>
+
                     <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-                        ConfiAI is the AI innovation wing of Confitech Solutions Private Limited, 
-                        delivering cutting-edge artificial intelligence products that transform businesses 
+                        ConfiAI is the AI innovation wing of Confitech Solutions Private Limited,
+                        delivering cutting-edge artificial intelligence products that transform businesses
                         and accelerate digital transformation.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#products" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                        <a href="#products"
+                            class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-eye mr-2"></i>
                             Explore Products
                         </a>
-                        <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
+                        <a href="#contact"
+                            class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-phone mr-2"></i>
                             Get in Touch
                         </a>
@@ -142,13 +158,23 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Animated Background Elements -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
             <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+    
 
     <!-- Stats Section -->
     <section class="py-16 bg-white">
@@ -180,10 +206,11 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our AI Products</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Discover our comprehensive suite of AI-powered solutions designed to revolutionize your business operations
+                    Discover our comprehensive suite of AI-powered solutions designed to revolutionize your business
+                    operations
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
                 <!-- Product cards will be dynamically generated -->
             </div>
@@ -197,13 +224,13 @@
                 <div>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About ConfiAI</h2>
                     <p class="text-lg text-gray-600 mb-6">
-                        ConfiAI represents the innovative AI division of Confitech Solutions Private Limited, 
-                        dedicated to developing and deploying state-of-the-art artificial intelligence solutions 
+                        ConfiAI represents the innovative AI division of Confitech Solutions Private Limited,
+                        dedicated to developing and deploying state-of-the-art artificial intelligence solutions
                         that address real-world business challenges.
                     </p>
                     <p class="text-lg text-gray-600 mb-8">
-                        Our team of AI experts and engineers work tirelessly to create products that not only 
-                        meet current market demands but also anticipate future technological needs, ensuring 
+                        Our team of AI experts and engineers work tirelessly to create products that not only
+                        meet current market demands but also anticipate future technological needs, ensuring
                         our clients stay ahead in the competitive landscape.
                     </p>
                     <div class="grid grid-cols-2 gap-6">
@@ -229,7 +256,7 @@
                     <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-white">
                         <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
                         <p class="text-lg leading-relaxed">
-                            To democratize artificial intelligence by making advanced AI technologies 
+                            To democratize artificial intelligence by making advanced AI technologies
                             accessible, practical, and transformative for businesses of all sizes.
                         </p>
                         <div class="mt-6 flex items-center">
@@ -253,10 +280,11 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Ready to transform your business with AI? Contact ConfiAI today and let's discuss how our solutions can drive your success.
+                    Ready to transform your business with AI? Contact ConfiAI today and let's discuss how our solutions
+                    can drive your success.
                 </p>
             </div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
@@ -272,14 +300,14 @@
                             <i class="fas fa-envelope text-blue-400 mt-1 mr-4"></i>
                             <div>
                                 <div class="font-semibold">Email</div>
-                                <div class="text-gray-300">contact@confiai.com</div>
+                                <div class="text-gray-300">contact@confitechsol.com</div>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-phone text-blue-400 mt-1 mr-4"></i>
                             <div>
                                 <div class="font-semibold">Phone</div>
-                                <div class="text-gray-300">+91 XXX XXX XXXX</div>
+                                <div class="text-gray-300">+918981845495</div>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -291,23 +319,30 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-gray-800 rounded-lg p-8">
                     <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
                     <form class="space-y-6">
                         <div>
                             <label class="block text-sm font-medium mb-2">Name</label>
-                            <input type="text" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400" placeholder="Your Name">
+                            <input type="text"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                                placeholder="Your Name">
                         </div>
                         <div>
                             <label class="block text-sm font-medium mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400" placeholder="your@email.com">
+                            <input type="email"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                                placeholder="your@email.com">
                         </div>
                         <div>
                             <label class="block text-sm font-medium mb-2">Message</label>
-                            <textarea rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400" placeholder="Tell us about your project..."></textarea>
+                            <textarea rows="4"
+                                class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-400"
+                                placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                             Send Message
                         </button>
                     </form>
@@ -322,7 +357,8 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mr-3">
                             <i class="fas fa-brain text-white"></i>
                         </div>
                         <div>
@@ -331,7 +367,7 @@
                         </div>
                     </div>
                     <p class="text-gray-400 mb-4">
-                        ConfiAI is the AI innovation division of Confitech Solutions Private Limited, 
+                        ConfiAI is the AI innovation division of Confitech Solutions Private Limited,
                         dedicated to delivering cutting-edge artificial intelligence solutions.
                     </p>
                     <div class="flex space-x-4">
@@ -346,30 +382,37 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Products</h4>
                     <ul class="space-y-2">
-                        <li><a href="product-smartanalytics.html" class="text-gray-400 hover:text-white transition-colors">Smart Analytics</a></li>
-                        <li><a href="product-aiassistant.html" class="text-gray-400 hover:text-white transition-colors">AI Assistant</a></li>
-                        <li><a href="product-visionai.html" class="text-gray-400 hover:text-white transition-colors">Vision AI</a></li>
-                        <li><a href="product-nlpengine.html" class="text-gray-400 hover:text-white transition-colors">NLP Engine</a></li>
-                        <li><a href="product-kycai.html" class="text-gray-400 hover:text-white transition-colors">Kyc Ai</a></li>
-                        <li><a href="product-saleai.html" class="text-gray-400 hover:text-white transition-colors">Sale Ai</a></li>
+                        <li><a href="product-smartanalytics.html"
+                                class="text-gray-400 hover:text-white transition-colors">Confi-AutoDocs</a></li>
+                        <li><a href="product-aiassistant.html"
+                                class="text-gray-400 hover:text-white transition-colors">Confi-HealthHub</a></li>
+                        <li><a href="product-visionai.html"
+                                class="text-gray-400 hover:text-white transition-colors">Confi-Assist</a></li>
+                        <li><a href="product-nlpengine.html"
+                                class="text-gray-400 hover:text-white transition-colors">Confi-Slot</a></li>
+                        <li><a href="product-kycai.html" class="text-gray-400 hover:text-white transition-colors">Confi
+                                KYC</a></li>
+                        <li><a href="product-saleai.html"
+                                class="text-gray-400 hover:text-white transition-colors">Confi-Sales</a></li>
                     </ul>
                 </div>
-                
+
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Company</h4>
                     <ul class="space-y-2">
                         <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
                         <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
                 <p class="text-gray-400">
                     © 2024 ConfiAI - Confitech Solutions Private Limited. All rights reserved.
@@ -381,4 +424,5 @@
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

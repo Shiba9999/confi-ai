@@ -83,54 +83,79 @@
                         <button
                             class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-download mr-2"></i>
-                            Get Integration Guide
+                            Download Brochure
                         </button>
                     </div>
                 </div>
+
+
                 <div class="relative">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <!-- Chat Demo Interface -->
-                        <div class="bg-white rounded-lg p-4 max-w-md mx-auto">
-                            <div class="flex items-center mb-4 pb-3 border-b border-gray-200">
-                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                                    <i class="fas fa-robot text-white text-sm"></i>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2">
+                        <!-- Medical Images Interface -->
+                        <div class="bg-white rounded-lg p-2 max-w-xl mx-auto">
+                            <!-- Header -->
+                            <div class="text-center mb-2">
+                                <h3 class="text-base font-semibold text-gray-800 mb-0.5">Health Analysis Results</h3>
+                                <p class="text-gray-600 text-xs">Real-time health monitoring and face verification</p>
+                            </div>
+
+                            <!-- Images Container -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center">
+                                <!-- Face Image -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded-md overflow-hidden shadow-sm bg-gradient-to-br from-blue-50 to-indigo-100 p-1.5">
+                                        <img src="./assets/FaceImage.png" alt="Face Verification"
+                                            class="w-full h-auto max-w-[120px] sm:max-w-[140px] rounded-sm object-cover" />
+                                        <div
+                                            class="absolute bottom-0.5 left-0.5 bg-black/70 text-white px-1.5 py-0.5 rounded-full text-xs font-medium">
+                                            Face Scan Active
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div class="font-semibold text-gray-900">ConfiAI Assistant</div>
-                                    <div class="text-xs text-green-500">Online</div>
+
+                                <!-- Vital Report Image -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded-md overflow-hidden shadow-sm bg-gradient-to-br from-green-50 to-emerald-100 p-1.5">
+                                        <img src="./assets/vitalreportimage.jpeg" alt="Vital Report"
+                                            class="w-full h-auto max-w-[120px] sm:max-w-[140px] rounded-sm object-cover" />
+                                        <div
+                                            class="absolute bottom-0.5 left-0.5 bg-black/70 text-white px-1.5 py-0.5 rounded-full text-xs font-medium">
+                                            Health Report
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="space-y-3 mb-4">
-                                <div class="flex">
-                                    <div class="bg-purple-500 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
-                                        Hello! How can I help you today?
-                                    </div>
+
+                            <!-- Bottom Info -->
+                            <div class="mt-2 text-center">
+                                <div
+                                    class="inline-flex items-center bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md text-xs font-medium">
+                                    <svg class="w-2.5 h-2.5 mr-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Real-time health monitoring with AI-powered analysis
                                 </div>
-                                <div class="flex justify-end">
-                                    <div class="bg-gray-100 text-gray-900 px-3 py-2 rounded-lg text-sm max-w-xs">
-                                        I need help with my order status
-                                    </div>
-                                </div>
-                                <div class="flex">
-                                    <div class="bg-purple-500 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
-                                        I'd be happy to help! Please provide your order number.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex items-center border border-gray-200 rounded-lg px-3 py-2">
-                                <input type="text" placeholder="Type your message..."
-                                    class="flex-1 text-sm outline-none">
-                                <i class="fas fa-paper-plane text-purple-500 cursor-pointer"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white mt-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Powerful Features</h2>
@@ -145,7 +170,7 @@
                     <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-brain text-blue-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Camera-Based Vital Detection</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Camera-Based Vital Detection</h3>
                     <p class="text-gray-600">
                         Measure SPO , heart rate, and stress using just the
                         front-facing camera.
@@ -156,7 +181,7 @@
                     <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-tachometer-alt text-green-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Digital Health Records Hub</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Digital Health Records Hub</h3>
                     <p class="text-gray-600">
                         Store, organize, and manage all medical reports and
                         documents securely in one place.
@@ -189,7 +214,7 @@
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-red-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Privacy & Security First</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Privacy & Security First</h3>
                     <p class="text-gray-600">
                         HIPAA-compliant data handling with full encryption and secure
                         storage.
@@ -200,7 +225,7 @@
                     <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-plug text-indigo-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Multi-Platform Accessibility</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Multi-Platform Accessibility</h3>
                     <p class="text-gray-600">
                         Available on Android, iOS, and web applications.
                     </p>
@@ -214,7 +239,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industry Applications</h2>
-                <p class="text-xl text-gray-600">Smart solutions driving innovation across healthcare, insurance, and wellness.</p>
+                <p class="text-xl text-gray-600">Smart solutions driving innovation across healthcare, insurance, and
+                    wellness.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -231,7 +257,7 @@
                     <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-car text-red-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">  Insurance Providers</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"> Insurance Providers</h3>
                     <p class="text-gray-600">Offer instant health assessments during policy applications and
                         claims.</p>
                 </div>
@@ -240,7 +266,7 @@
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-store text-green-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">  Wellness & Fitness</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"> Wellness & Fitness</h3>
                     <p class="text-gray-600"> Integrate into fitness apps and devices for preventive health
                         monitoring.</p>
                 </div>
@@ -251,43 +277,43 @@
     <!-- Key Benefits -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
-            <p class="text-xl text-gray-600">
-              Transform customer service with intelligent, context-aware AI conversations
-            </p>
-          </div>
-      
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-            <!-- 24/7 Availability -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-clock text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">AI-Powered Vitals</h3>
-              <p class="text-gray-600"> Revolutionize Telehealth with AI-powered vitals from any smartphone</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
+                <p class="text-xl text-gray-600">
+                    Transform customer service with intelligent, context-aware AI conversations
+                </p>
             </div>
-      
-            <!-- Natural Conversations -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-comments text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Software-Driven Care</h3>
-              <p class="text-gray-600"> Reduce Hardware Dependency with software-driven measurements.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+                <!-- 24/7 Availability -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">AI-Powered Vitals</h3>
+                    <p class="text-gray-600"> Revolutionize Telehealth with AI-powered vitals from any smartphone</p>
+                </div>
+
+                <!-- Natural Conversations -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Software-Driven Care</h3>
+                    <p class="text-gray-600"> Reduce Hardware Dependency with software-driven measurements.</p>
+                </div>
+
+                <!-- Multi-Channel -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-share-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Preventive Healthcare</h3>
+                    <p class="text-gray-600">Empower Preventive Healthcare by giving early alerts to patients.</p>
+                </div>
             </div>
-      
-            <!-- Multi-Channel -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-share-alt text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Preventive Healthcare</h3>
-              <p class="text-gray-600">Empower Preventive Healthcare by giving early alerts to patients.</p>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
     <!-- Pricing Section -->
@@ -312,14 +338,16 @@
                             <span class="text-gray-600">Up to 1,000 users</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Professional Plan -->
                 <div class="bg-blue-600 text-white rounded-xl p-8 relative flex flex-col h-full">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                    <div
+                        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Most Popular
                     </div>
                     <h3 class="text-xl font-bold mb-4">Professional</h3>
@@ -337,7 +365,8 @@
                             <span>Analytics dashboard</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
@@ -358,7 +387,8 @@
                             <span class="text-gray-600">API integration, white-labeling</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Contact Sales
                     </button>
                 </div>
