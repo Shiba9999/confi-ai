@@ -77,7 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!productsGrid) return;
 
         productsGrid.innerHTML = products.map(product => `
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl card-hover overflow-hidden group">
+          <div class="bg-white rounded-xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] card-hover overflow-hidden group">
+
+
+
                 <div class="p-6">
                     <!-- Product Icon -->
                     <div class="w-16 h-16 bg-gradient-to-r ${product.color} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">

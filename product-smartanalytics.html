@@ -93,11 +93,12 @@
                         automates extraction, validation, and storage with unmatched accuracy and speed.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button
+                        <button onclick="window.open('https://confi-autodocs.vercel.app/', '_blank')"
                             class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-play mr-2"></i>
                             Demo
                         </button>
+
                         <button
                             class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-download mr-2"></i>
@@ -107,12 +108,15 @@
                 </div>
                 <div class="relative">
                     <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <canvas id="demoChart" width="400" height="300"></canvas>
+                        <img src="assets/AutoDoc.png" alt="Confi-AutoDocs Preview"
+                            class="w-full h-auto rounded-lg object-contain" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Features Section -->
     <section class="py-20 bg-white">
@@ -200,7 +204,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industry Applications</h2>
-                <p class="text-xl text-gray-600">Automating documents and workflows across finance, healthcare, and logistics.</p>
+                <p class="text-xl text-gray-600">Automating documents and workflows across finance, healthcare, and
+                    logistics.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -236,44 +241,44 @@
     <!-- Key Benefits -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
-            <p class="text-xl text-gray-600">
-              Transform customer service with intelligent, context-aware AI conversations
-            </p>
-          </div>
-      
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-            <!-- 24/7 Availability -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-clock text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Cost Reduction</h3>
-              <p class="text-gray-600">Reduce Processing Costs by up to 70% with automation</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
+                <p class="text-xl text-gray-600">
+                    Transform customer service with intelligent, context-aware AI conversations
+                </p>
             </div>
-      
-            <!-- Natural Conversations -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-comments text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">High Accuracy</h3>
-              <p class="text-gray-600">Achieve 99% Accuracy with hybrid OCR + Generative AI.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+                <!-- 24/7 Availability -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Cost Reduction</h3>
+                    <p class="text-gray-600">Reduce Processing Costs by up to 70% with automation</p>
+                </div>
+
+                <!-- Natural Conversations -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">High Accuracy</h3>
+                    <p class="text-gray-600">Achieve 99% Accuracy with hybrid OCR + Generative AI.</p>
+                </div>
+
+                <!-- Multi-Channel -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-share-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Faster Workflows</h3>
+                    <p class="text-gray-600">Accelerate Workflows and eliminate manual data entry errors</p>
+                </div>
             </div>
-      
-            <!-- Multi-Channel -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-share-alt text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Faster Workflows</h3>
-              <p class="text-gray-600">Accelerate Workflows and eliminate manual data entry errors</p>
-            </div>
-          </div>
         </div>
-      </section>
-      
+    </section>
+
 
     <!-- Technical Specifications -->
     <!-- <section class="py-20 bg-gray-50">
@@ -354,39 +359,32 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Starter Plan -->
-                <div class="bg-gray-50 rounded-xl p-8">
+                <!-- Standard Plan -->
+                <div class="bg-gray-50 rounded-xl p-8 flex flex-col h-full">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Standard</h3>
                     <div class="mb-6">
                         <span class="text-3xl font-bold text-gray-900">₹15,000</span>
                         <span class="text-gray-600">/month</span>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-4 mb-8 flex-grow">
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-3"></i>
                             <span class="text-gray-600">Up to 10,000 documents</span>
                         </li>
-                        <!-- <li class="flex items-center">
+                        <!-- Adding invisible placeholder items to maintain consistent height -->
+                        <li class="flex items-center opacity-0 pointer-events-none">
                             <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span class="text-gray-600">5 custom dashboards</span>
+                            <span class="text-gray-600">Placeholder feature</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span class="text-gray-600">Basic reporting</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span class="text-gray-600">Email support</span>
-                        </li> -->
                     </ul>
                     <button
-                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Professional Plan -->
-                <div class="bg-blue-600 text-white rounded-xl p-8 relative">
+                <div class="bg-blue-600 text-white rounded-xl p-8 relative flex flex-col h-full">
                     <div
                         class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Most Popular
@@ -396,56 +394,40 @@
                         <span class="text-3xl font-bold">₹40000</span>
                         <span class="text-blue-200">/month</span>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-4 mb-8 flex-grow">
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-400 mr-3"></i>
                             <span>Up to 50,000 documents</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-400 mr-3"></i>
-                            <span> Advanced integrations</span>
+                            <span>Advanced integrations</span>
                         </li>
-                        <!-- <li class="flex items-center">
-                            <i class="fas fa-check text-green-400 mr-3"></i>
-                            <span>Advanced analytics</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-400 mr-3"></i>
-                            <span>Priority support</span>
-                        </li> -->
                     </ul>
                     <button
-                        class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="bg-gray-50 rounded-xl p-8">
+                <div class="bg-gray-50 rounded-xl p-8 flex flex-col h-full">
                     <h3 class="text-xl font-bold text-gray-900 mb-4">Enterprise</h3>
                     <div class="mb-6">
-                        <span class="text-3xl font-bold text-gray-900"> Custom pricing</span>
+                        <span class="text-3xl font-bold text-gray-900">Custom pricing</span>
                     </div>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-4 mb-8 flex-grow">
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-3"></i>
                             <span class="text-gray-600">Unlimited documents</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span class="text-gray-600">dedicated support</span>
-                        </li>
-                        <!-- <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
                             <span class="text-gray-600">Dedicated support</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-3"></i>
-                            <span class="text-gray-600">SLA guarantee</span>
-                        </li> -->
                     </ul>
                     <button
-                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Contact Sales
                     </button>
                 </div>
