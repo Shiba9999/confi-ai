@@ -74,7 +74,7 @@
                         contextual, accurate, and human-like responses anytime, anywhere.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button
+                        <button onclick="window.open('https://multimodel-chatbot.vercel.app/', '_blank')"
                             class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-camera mr-2"></i>
                             Demo
@@ -88,38 +88,38 @@
                 </div>
                 <div class="relative">
                     <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <!-- Vision Demo Interface -->
+                        <!-- Chat Demo Interface -->
                         <div class="bg-white rounded-lg p-4 max-w-md mx-auto">
-                            <div class="mb-4">
-                                <div
-                                    class="w-full h-40 bg-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden">
-                                    <i class="fas fa-image text-gray-400 text-4xl"></i>
-                                    <!-- Simulated detection boxes -->
-                                    <div class="absolute top-4 left-4 w-20 h-16 border-2 border-green-500 rounded">
-                                    </div>
-                                    <div
-                                        class="absolute top-6 left-6 bg-green-500 text-white text-xs px-2 py-1 rounded">
-                                        Person 95%</div>
-                                    <div class="absolute bottom-8 right-8 w-16 h-12 border-2 border-blue-500 rounded">
-                                    </div>
-                                    <div
-                                        class="absolute bottom-10 right-10 bg-blue-500 text-white text-xs px-2 py-1 rounded">
-                                        Car 87%</div>
+                            <div class="flex items-center mb-4 pb-3 border-b border-gray-200">
+                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-robot text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">ConfiAI Assistant</div>
+                                    <div class="text-xs text-green-500">Online</div>
                                 </div>
                             </div>
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="text-gray-600">Objects Detected:</span>
-                                    <span class="font-semibold">2</span>
+                            <div class="space-y-3 mb-4">
+                                <div class="flex">
+                                    <div class="bg-purple-500 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                                        Hello! How can I help you today?
+                                    </div>
                                 </div>
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="text-gray-600">Processing Time:</span>
-                                    <span class="font-semibold">0.3s</span>
+                                <div class="flex justify-end">
+                                    <div class="bg-gray-100 text-gray-900 px-3 py-2 rounded-lg text-sm max-w-xs">
+                                        I need help with my order status
+                                    </div>
                                 </div>
-                                <div class="flex items-center justify-between text-sm">
-                                    <span class="text-gray-600">Confidence Level:</span>
-                                    <span class="font-semibold">91%</span>
+                                <div class="flex">
+                                    <div class="bg-purple-500 text-white px-3 py-2 rounded-lg text-sm max-w-xs">
+                                        I'd be happy to help! Please provide your order number.
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="flex items-center border border-gray-200 rounded-lg px-3 py-2">
+                                <input type="text" placeholder="Type your message..."
+                                    class="flex-1 text-sm outline-none">
+                                <i class="fas fa-paper-plane text-purple-500 cursor-pointer"></i>
                             </div>
                         </div>
                     </div>
