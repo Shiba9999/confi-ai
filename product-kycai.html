@@ -93,23 +93,79 @@
                         document scanning, face match, and fraud detection
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button
+                        <button onclick="window.open('https://kyc-web-application.vercel.app/', '_blank')"
                             class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-play mr-2"></i>
                             Demo
                         </button>
-                        <button
+                        <a href="./assets/ConfiKyc.pdf" download
                             class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
                             <i class="fas fa-download mr-2"></i>
                             Download Brochure
-                        </button>
+                        </a>
+
                     </div>
                 </div>
+
+
                 <div class="relative">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                        <canvas id="demoChart" width="400" height="300"></canvas>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-2">
+                        <!-- Medical Images Interface -->
+                        <div class="bg-white rounded-lg p-2 max-w-xl mx-auto">
+                            <!-- Header -->
+                            <div class="text-center mb-2">
+                                <h3 class="text-base font-semibold text-gray-800 mb-0.5">Digital KYC Results</h3>
+                                <p class="text-gray-600 text-xs">Digital KYC with AI-powered ID verification and face
+                                    match</p>
+                            </div>
+
+                            <!-- Images Container -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center">
+                                <!-- Face Image -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded-md overflow-hidden shadow-sm bg-gradient-to-br from-blue-50 to-indigo-100 p-1.5">
+                                        <img src="./assets/SuccesPage.png" alt="Face Verification"
+                                            class="w-full h-auto max-w-[120px] sm:max-w-[140px] rounded-sm object-cover" />
+                                        <div
+                                            class="absolute bottom-0.5 left-0.5 bg-black/70 text-white px-1.5 py-0.5 rounded-full text-xs font-medium">
+                                            Kyc Report
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Vital Report Image -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="relative rounded-md overflow-hidden shadow-sm bg-gradient-to-br from-green-50 to-emerald-100 p-1.5">
+                                        <img src="./assets/verification.jpeg" alt="Vital Report"
+                                            class="w-full h-auto max-w-[120px] sm:max-w-[140px] rounded-sm object-cover" />
+                                        <div
+                                            class="absolute bottom-0.5 left-0.5 bg-black/70 text-white px-1.5 py-0.5 rounded-full text-xs font-medium">
+                                            Kyc Verification
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bottom Info -->
+                            <div class="mt-2 text-center">
+                                <div
+                                    class="inline-flex items-center bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md text-xs font-medium">
+                                    <svg class="w-2.5 h-2.5 mr-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Real-time health monitoring with AI-powered analysis
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </section>
@@ -140,7 +196,7 @@
                     <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-tachometer-alt text-green-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Facial Biometrics Verification</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Facial Biometrics Verification</h3>
                     <p class="text-gray-600">
                         Match live selfies against ID photos with high accuracy.
                     </p>
@@ -160,7 +216,7 @@
                     <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-chart-pie text-orange-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Multi-ID Support </h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Multi-ID Support </h3>
                     <p class="text-gray-600">
                         Supports passports, Aadhaar, PAN, driving licenses, and more
                     </p>
@@ -170,7 +226,7 @@
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-red-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  Global Compliance</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> Global Compliance</h3>
                     <p class="text-gray-600">
                         Stay compliant with KYC/AML regulations worldwide
                     </p>
@@ -180,7 +236,7 @@
                     <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-plug text-indigo-600 text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">  API-First Design</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4"> API-First Design</h3>
                     <p class="text-gray-600">
                         Easily integrate into mobile apps, portals, and CRMs
                     </p>
@@ -194,7 +250,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industry Applications</h2>
-                <p class="text-xl text-gray-600">Seamless identity verification solutions across finance, telecom, and e-commerce.</p>
+                <p class="text-xl text-gray-600">Seamless identity verification solutions across finance, telecom, and
+                    e-commerce.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -218,7 +275,7 @@
                     <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-store text-green-600"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">  E-commerce & Marketplaces </h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3"> E-commerce & Marketplaces </h3>
                     <p class="text-gray-600"> Verify seller/buyer identities to build trust.</p>
                 </div>
             </div>
@@ -229,44 +286,44 @@
     <!-- Key Benefits -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
-            <p class="text-xl text-gray-600">
-              Transform customer service with intelligent, context-aware AI conversations
-            </p>
-          </div>
-      
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
-            <!-- 24/7 Availability -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-clock text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Faster Onboarding</h3>
-              <p class="text-gray-600"> Accelerate Onboarding by cutting verification time to seconds</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose</h2>
+                <p class="text-xl text-gray-600">
+                    Transform customer service with intelligent, context-aware AI conversations
+                </p>
             </div>
-      
-            <!-- Natural Conversations -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-comments text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Fraud Prevention</h3>
-              <p class="text-gray-600">Reduce Fraud Risks with biometric-powered AI</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center">
+                <!-- 24/7 Availability -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Faster Onboarding</h3>
+                    <p class="text-gray-600"> Accelerate Onboarding by cutting verification time to seconds</p>
+                </div>
+
+                <!-- Natural Conversations -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Fraud Prevention</h3>
+                    <p class="text-gray-600">Reduce Fraud Risks with biometric-powered AI</p>
+                </div>
+
+                <!-- Multi-Channel -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-share-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Effortless Compliance</h3>
+                    <p class="text-gray-600">Achieve Compliance with AML/KYC regulations effortlessly</p>
+                </div>
             </div>
-      
-            <!-- Multi-Channel -->
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-share-alt text-purple-600 text-xl"></i>
-              </div>
-              <h3 class="text-lg font-bold text-gray-900 mb-2">Effortless Compliance</h3>
-              <p class="text-gray-600">Achieve Compliance with AML/KYC regulations effortlessly</p>
-            </div>
-          </div>
         </div>
-      </section>
-      
+    </section>
+
 
     <!-- Technical Specifications -->
     <!-- <section class="py-20 bg-gray-50">
@@ -360,14 +417,16 @@
                             <span class="text-gray-600">Basic verification up to 5,000 checks</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
 
                 <!-- Professional Plan -->
                 <div class="bg-blue-600 text-white rounded-xl p-8 relative flex flex-col h-full">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                    <div
+                        class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                         Most Popular
                     </div>
                     <h3 class="text-xl font-bold mb-4">Professional</h3>
@@ -385,7 +444,8 @@
                             <span>25,000 checks</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mt-auto">
                         Get Started
                     </button>
                 </div>
@@ -406,7 +466,8 @@
                             <span class="text-gray-600">Dedicated SLA</span>
                         </li>
                     </ul>
-                    <button class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
+                    <button
+                        class="w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors mt-auto">
                         Contact Sales
                     </button>
                 </div>
